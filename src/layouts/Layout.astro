@@ -1,3 +1,8 @@
+---
+import Header from "../components/Header.astro"
+import { ClientRouter } from "astro:transitions";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +10,30 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Backgroundz | Collection of creative backgrounds designed by AI</title>
+		<ClientRouter />
 	</head>
 	<body>
+		<Header />
 		<slot />
+		<!-- <p class="text-light-gray text-center py-10">Made by<a href="https://github.com/lololange" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 duration-300 ml-1">@LoloLange</a></p> -->
 	</body>
 </html>
 
 <style>
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/inter.ttf') format('ttf');
+	}
+
 	html,
 	body {
+		background-color: #1E1E1E;
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Inter', sans-serif;
+		color: white;
 	}
+
 </style>

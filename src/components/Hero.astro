@@ -1,0 +1,19 @@
+---
+import { BACKGROUNDS } from '../constants/constants';
+import BackgroundCard from './BackgroundCard.astro';
+---
+
+<main>
+    <div class="flex flex-col items-center py-10 px-10 text-center antialiased">
+        <p class="text-[40px] leading-tight font-extrabold">Collection of creative <br/> backgrounds designed by AI</p>
+        <p class="mt-5">Effortless to implement - download and enhance your project instantly.</p>
+    </div>
+
+    <div class="px-32 py-10 flex flex-wrap items-center gap-14 justify-center">
+        {
+            BACKGROUNDS.map((bg) => (
+                <BackgroundCard bg={bg} />
+            ))
+        }
+    </div>
+</main>
