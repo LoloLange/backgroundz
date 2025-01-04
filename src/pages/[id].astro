@@ -16,6 +16,7 @@ export function getStaticPaths() {
 export type Bg = {
   id: number;
   img: ImageMetadata;
+  bestOn: 'top' | 'bottom';
   extras: Extra[];
 };
 
@@ -28,10 +29,10 @@ import { BACKGROUNDS } from '../constants/constants';
 import Examples from '../components/Examples.astro';
 import Download from '../components/Download.astro';
 const background: Bg = BACKGROUNDS.find(bg => bg.id === parseInt(id));
-const { img } = background;
+const { img, bestOn } = background;
 ---
 <Layout>
     <Gallery bg={background} client:load />
     <Examples img={img} />
-    <Download img={img} />
+    <Download img={img} bestOn={bestOn} />
 </Layout>

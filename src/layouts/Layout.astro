@@ -8,7 +8,7 @@ import { ClientRouter } from "astro:transitions";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Backgroundz | Collection of creative backgrounds designed by AI</title>
 		<ClientRouter />
@@ -16,7 +16,7 @@ import { ClientRouter } from "astro:transitions";
 	<body>
 		<Header />
 		<slot />
-		<p class="text-light-gray text-center py-5">Made by<a href="https://github.com/lololange" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 duration-300 ml-1">@LoloLange</a></p>
+		<p class="text-light-gray text-center py-5 min-[2000px]:py-8 min-[2000px]:text-lg">Made by<a href="https://github.com/lololange" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 duration-300 ml-1">@LoloLange</a></p>
 	</body>
 </html>
 
@@ -43,3 +43,5 @@ import { ClientRouter } from "astro:transitions";
 		user-select: none;
 	}
 </style>
+
+<style is:global>::-webkit-scrollbar {width: 15px;} ::-webkit-scrollbar-track {background: #353535;} ::-webkit-scrollbar-thumb {background: #5f6162;} ::-webkit-scrollbar-thumb:hover {background: #636a6e;}</style>

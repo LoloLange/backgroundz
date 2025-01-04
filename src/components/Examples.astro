@@ -4,27 +4,27 @@ const { img } = Astro.props;
 import landing from '../assets/examples/landing.webp';
 ---
 
-<section class="px-32 min-[1200px]:px-[300px] py-8 w-full">
-    <p class="text-2xl font-bold">Examples</p>
-    <div class="flex flex-col justify-between flex-wrap gap-10 mt-5">
-        <div class="flex w-[500px] h-auto relative shadow-xl">
+<section class="px-10 min-[600px]:px-20 min-[800px]:px-32 min-[1000px]:px-44 min-[1300px]:px-56 min-[1500px]:px-0 py-8 min-[1500px]:flex flex-col items-center">
+    <p class="text-2xl font-bold min-[1500px]:w-[1000px]">Examples</p>
+    <div class="flex flex-col justify-between items-center flex-wrap gap-10 mt-5">
+        <div class="flex min-[1500px]:w-[1000px] h-auto relative shadow-xl">
             <img 
                 src={img.src} 
                 alt="background example" 
-                class="rounded-l-lg pointer-events-none w-full h-auto object-cover" 
+                class="rounded-l-lg pointer-events-none w-[50%] h-auto object-cover" 
             />
             <img 
                 src="/src/assets/examples/login.webp" 
                 alt="login example" 
-                class="rounded-r-lg pointer-events-none w-full h-auto object-cover" 
+                class="rounded-r-lg pointer-events-none w-[50%] h-auto object-cover" 
             />
         </div>
     
-        <div class="w-[1000px] h-auto relative shadow-xl">
+        <div class="min-[1500px]:w-[1000px] h-auto relative shadow-xl">
             <img 
                 src={landing.src} 
                 alt="landing page example" 
-                class="z-20 px-5 py-2 absolute rounded-lg -bottom-2 w-full h-full" 
+                class="z-20 px-6 py-2 absolute rounded-lg -bottom-2 w-full h-full" 
             />
             <img 
                 src={img.src} 

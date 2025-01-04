@@ -42,6 +42,7 @@ export const BACKGROUNDS = [
   {
     id: 1,
     img: img1,
+    bestOn: 'top',
     extras: [
       {
         img: img1_1,
@@ -66,6 +67,7 @@ export const BACKGROUNDS = [
   {
     id: 2,
     img: img2,
+    bestOn: 'bottom',
     extras: [
       {
         img: img2_1,
@@ -81,6 +83,7 @@ export const BACKGROUNDS = [
   {
     id: 3,
     img: img3,
+    bestOn: 'bottom',
     extras: [
       {
         img: img3_1,
@@ -99,6 +102,7 @@ export const BACKGROUNDS = [
   {
     id: 4,
     img: img4,
+    bestOn: 'top',
     extras: [
       {
         img: img4_1,
@@ -117,6 +121,7 @@ export const BACKGROUNDS = [
   {
     id: 5,
     img: img5,
+    bestOn: 'top',
     extras: [
       {
         img: img5_1,
@@ -141,6 +146,7 @@ export const BACKGROUNDS = [
   {
     id: 6,
     img: img6,
+    bestOn: 'top',
     extras: [
       {
         img: img6_1,
