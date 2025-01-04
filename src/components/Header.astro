@@ -2,14 +2,14 @@
 const pathname = Astro.url.pathname;
 ---
 
-<header class:list={["pt-7 px-7", {
-    "flex justify-between items-center": pathname !== "/",
-}]}>
+<header class="pt-7 px-12 flex justify-between items-center">
     {
-        pathname !== '/' && (
+        pathname !== '/' ? (
             <a href="/" class="stroke-light-gray hover:stroke-gray-400 duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg"  width="36"  height="36"  viewBox="0 0 24 24"  fill="none"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  width="42"  height="42"  viewBox="0 0 24 24"  fill="none"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
             </a>
+        ) : (
+            <img src="/logo.webp" class="w-12 select-none pointer-events-none" />
         )
     }
     <div class="flex justify-end">
