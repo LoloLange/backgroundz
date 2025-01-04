@@ -16,7 +16,7 @@ import { ClientRouter } from "astro:transitions";
 	<body>
 		<Header />
 		<slot />
-		<!-- <p class="text-light-gray text-center py-10">Made by<a href="https://github.com/lololange" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 duration-300 ml-1">@LoloLange</a></p> -->
+		<p class="text-light-gray text-center py-5">Made by<a href="https://github.com/lololange" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 duration-300 ml-1">@LoloLange</a></p>
 	</body>
 </html>
 
@@ -36,4 +36,10 @@ import { ClientRouter } from "astro:transitions";
 		color: white;
 	}
 
+</style>
+
+<style is:global>
+	img {
+		user-select: none;
+	}
 </style>

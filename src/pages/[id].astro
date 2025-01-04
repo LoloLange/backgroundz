@@ -1,0 +1,37 @@
+---
+import { Gallery } from '../components/Gallery';
+import Layout from '../layouts/Layout.astro';
+
+export function getStaticPaths() {
+    return [
+        { params: { id: '1' } },
+        { params: { id: '2' } },
+        { params: { id: '3' } },
+        { params: { id: '4' } },
+        { params: { id: '5' } },
+        { params: { id: '6' } },
+    ]
+}
+
+export type Bg = {
+  id: number;
+  img: ImageMetadata;
+  extras: Extra[];
+};
+
+export type Extra = {
+  img: ImageMetadata;
+};
+
+const { id } = Astro.params;
+import { BACKGROUNDS } from '../constants/constants';
+import Examples from '../components/Examples.astro';
+import Download from '../components/Download.astro';
+const background: Bg = BACKGROUNDS.find(bg => bg.id === parseInt(id));
+const { img } = background;
+---
+<Layout>
+    <Gallery bg={background} client:load />
+    <Examples img={img} />
+    <Download img={img} />
+</Layout>

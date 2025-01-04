@@ -1,0 +1,16 @@
+---
+const pathname = Astro.url.pathname;
+const id = pathname.split('/')[1];
+const { img } = Astro.props
+---
+<style>
+    #button {
+        background-image: url(${img.src});
+        background-position: top;
+        background-size: cover;
+    }
+</style>
+
+<div class="flex justify-center py-6">
+    <a id="button" style={`background-image: url('${img.src}');`} class="px-10 py-3 rounded-lg hover:scale-110 duration-500 cursor-pointer shadow-xl">Download now</a>
+</div>

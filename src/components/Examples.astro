@@ -1,0 +1,36 @@
+---
+const { img } = Astro.props;
+
+import landing from '../assets/examples/landing.webp';
+---
+
+<section class="px-32 min-[1200px]:px-[300px] py-8 w-full">
+    <p class="text-2xl font-bold">Examples</p>
+    <div class="flex flex-col justify-between flex-wrap gap-10 mt-5">
+        <div class="flex w-[500px] h-auto relative shadow-xl">
+            <img 
+                src={img.src} 
+                alt="background example" 
+                class="rounded-l-lg pointer-events-none w-full h-auto object-cover" 
+            />
+            <img 
+                src="/src/assets/examples/login.webp" 
+                alt="login example" 
+                class="rounded-r-lg pointer-events-none w-full h-auto object-cover" 
+            />
+        </div>
+    
+        <div class="w-[1000px] h-auto relative shadow-xl">
+            <img 
+                src={landing.src} 
+                alt="landing page example" 
+                class="z-20 px-5 py-2 absolute rounded-lg -bottom-2 w-full h-full" 
+            />
+            <img 
+                src={img.src} 
+                alt="background example" 
+                class="pointer-events-none -z-10 rounded-lg w-full h-auto object-cover" 
+            />
+        </div>
+    </div>
+</section>
