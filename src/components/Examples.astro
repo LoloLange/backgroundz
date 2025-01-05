@@ -1,33 +1,34 @@
 ---
 const { img } = Astro.props;
-
-import landing from '../assets/examples/landing.webp';
+import { Image } from 'astro:assets';
+import landing from '@/assets/examples/landing.webp';
+import login from '@/assets/examples/login.webp';
 ---
 
 <section class="px-10 min-[600px]:px-20 min-[800px]:px-32 min-[1000px]:px-44 min-[1300px]:px-56 min-[1500px]:px-0 py-8 min-[1500px]:flex flex-col items-center">
-    <p class="text-2xl font-bold min-[1500px]:w-[1000px]">Examples</p>
+    <p class="text-2xl font-bold min-[1500px]:w-[1000px] min-[2000px]:w-[1500px]">Examples</p>
     <div class="flex flex-col justify-between items-center flex-wrap gap-10 mt-5">
-        <div class="flex min-[1500px]:w-[1000px] h-auto relative shadow-xl">
-            <img 
-                src={img.src} 
+        <div class="flex min-[1500px]:w-[1000px] min-[2000px]:w-[1500px] h-auto relative shadow-xl">
+            <Image 
+                src={img} 
                 alt="background example" 
                 class="rounded-l-lg pointer-events-none w-[50%] h-auto object-cover" 
             />
-            <img 
-                src="/src/assets/examples/login.webp" 
+            <Image 
+                src={login}
                 alt="login example" 
                 class="rounded-r-lg pointer-events-none w-[50%] h-auto object-cover" 
             />
         </div>
     
-        <div class="min-[1500px]:w-[1000px] h-auto relative shadow-xl">
-            <img 
-                src={landing.src} 
+        <div class="min-[1500px]:w-[1000px] min-[2000px]:w-[1500px] h-auto relative shadow-xl">
+            <Image 
+                src={landing}
                 alt="landing page example" 
-                class="z-20 px-6 py-2 absolute rounded-lg -bottom-2 w-full h-full" 
+                class="pointer-events-none z-20 px-6 py-2 absolute rounded-lg -bottom-2 w-full h-full" 
             />
-            <img 
-                src={img.src} 
+            <Image 
+                src={img} 
                 alt="background example" 
                 class="pointer-events-none -z-10 rounded-lg w-full h-auto object-cover" 
             />
