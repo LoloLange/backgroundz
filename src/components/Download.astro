@@ -4,7 +4,7 @@ const id = pathname.split('/')[1];
 const { img, bestOn } = Astro.props;
 ---
 <div class="flex justify-center py-6">
-    <a id="button" href={`/src/assets/zips/${id}.zip`} download style={`background-image: url('${img.src}');`} class={`px-10 py-3 rounded-lg hover:scale-110 duration-300 cursor-pointer shadow-xl min-[1000px]:text-lg min-[2000px]:text-xl bg-cover`} class:list={[
+    <a id="button" href={`/zips/${id}.zip`} download style={`background-image: url('${img.src}');`} class={`px-10 py-3 rounded-lg hover:scale-110 duration-300 cursor-pointer shadow-xl min-[1000px]:text-lg min-[2000px]:text-xl bg-cover`} class:list={[
         {
           "bg-top hover:bg-bottom": bestOn === 'top',
           "bg-bottom hover:bg-top": bestOn === 'bottom',
