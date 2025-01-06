@@ -2,7 +2,7 @@
 const pathname = Astro.url.pathname;
 ---
 
-<header class="pt-7 px-12 flex justify-between items-center">
+<header class="pt-7 px-10 min-[500px]:px-12 flex justify-between items-center">
     {
         pathname !== '/' ? (
             <a href="/" class="stroke-light-gray hover:stroke-gray-400 duration-300">
