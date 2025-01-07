@@ -5,6 +5,9 @@ import img3 from "@/assets/landing/3.webp";
 import img4 from "@/assets/landing/4.webp";
 import img5 from "@/assets/landing/5.webp";
 import img6 from "@/assets/landing/6.webp";
+import img7 from "@/assets/landing/7.webp";
+import img8 from "@/assets/landing/8.webp";
+import img9 from "@/assets/landing/9.webp";
 
 // PAGINA
 import img1_1 from "@/assets/pagina/1/1_1.webp";
@@ -37,6 +40,23 @@ import img5_6 from "@/assets/pagina/5/5_6.webp";
 
 import img6_1 from "@/assets/pagina/6/6_1.webp";
 import img6_2 from "@/assets/pagina/6/6_2.webp";
+
+import img7_1 from "@/assets/pagina/7/7_1.webp";
+import img7_2 from "@/assets/pagina/7/7_2.webp";
+import img7_3 from "@/assets/pagina/7/7_3.webp";
+import img7_4 from "@/assets/pagina/7/7_4.webp";
+import img7_5 from "@/assets/pagina/7/7_5.webp";
+
+import img8_1 from "@/assets/pagina/8/8_1.webp";
+import img8_2 from "@/assets/pagina/8/8_2.webp";
+import img8_3 from "@/assets/pagina/8/8_3.webp";
+
+import img9_1 from "@/assets/pagina/9/9_1.webp";
+import img9_2 from "@/assets/pagina/9/9_2.webp";
+import img9_3 from "@/assets/pagina/9/9_3.webp";
+import img9_4 from "@/assets/pagina/9/9_4.webp";
+import img9_5 from "@/assets/pagina/9/9_5.webp";
+
 
 export const BACKGROUNDS = [
   {
@@ -153,6 +173,66 @@ export const BACKGROUNDS = [
       },
       {
         img: img6_2,
+      },
+    ],
+  },
+  {
+    id: 7,
+    img: img7,
+    bestOn: 'bottom',
+    extras: [
+      {
+        img: img7_1,
+      },
+      {
+        img: img7_2,
+      },
+      {
+        img: img7_3,
+      },
+      {
+        img: img7_4,
+      },
+      {
+        img: img7_5,
+      },
+    ],
+  },
+  {
+    id: 8,
+    img: img8,
+    bestOn: 'top',
+    extras: [
+      {
+        img: img8_1,
+      },
+      {
+        img: img8_2,
+      },
+      {
+        img: img8_3,
+      },
+    ],
+  },
+  {
+    id: 9,
+    img: img9,
+    bestOn: 'bottom',
+    extras: [
+      {
+        img: img9_1,
+      },
+      {
+        img: img9_2,
+      },
+      {
+        img: img9_3,
+      },
+      {
+        img: img9_4,
+      },
+      {
+        img: img9_5,
       },
     ],
   },
